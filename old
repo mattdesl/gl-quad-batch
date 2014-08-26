@@ -1,0 +1,20 @@
+
+// Object.defineProperty(QuadBatch.prototype, "shader", {
+//     set: function(shader) {
+//         this._shader = shader
+//         //user is resetting to default shader
+//         if (!this._shader) {
+//             //lazily create the default shader
+//             if (!this._defaultShader) {
+//                 this._defaultShader = createShader(gl, {
+//                     texcoord: true,
+//                     color: true
+//                 })
+//             }
+//             this._shader = this._defaultShader
+//         }
+//     },
+//     get: function() {
+//         return this._shader
+//     }
+// })

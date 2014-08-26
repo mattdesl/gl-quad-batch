@@ -1,0 +1,76 @@
+{
+  "name": "gl-quad-batch",
+  "version": "1.0.0",
+  "description": "fast rendering of textured quads (sprites)",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Matt DesLauriers <dave.des@gmail.com>",
+  "dependencies": {
+    "gl-basic-shader": "^1.0.1",
+    "gl-buffer": "^2.0.8",
+    "gl-vao": "^1.1.3",
+    "number-util": "^1.0.3"
+  },
+  "devDependencies": {
+    "baboon-image": "^1.0.0",
+    "canvas-testbed": "^0.4.0",
+    "domready": "^1.0.6",
+    "gl-mat4": "^1.0.0",
+    "gl-texture2d": "^2.0.2",
+    "gl-white-texture": "^1.0.0",
+    "glslify": "^1.6.0",
+    "tape": "~2.13.2",
+    "texture-region": "^1.0.0",
+    "webgl-context": "^1.2.1"
+  },
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "testling": {
+    "files": "test.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/gl-quad-batch.git"
+  },
+  "homepage": "https://github.com/mattdesl/gl-quad-batch",
+  "bugs": {
+    "url": "https://github.com/mattdesl/gl-quad-batch/issues"
+  },
+  "keywords": [
+    "glsl",
+    "gl",
+    "webgl",
+    "stackgl",
+    "gl-modules",
+    "modules-gl",
+    "fast",
+    "sprite",
+    "sprites",
+    "renderer",
+    "rendering",
+    "render",
+    "quad",
+    "quads",
+    "image",
+    "images",
+    "draw",
+    "texture",
+    "tex"
+  ],
+  "browserify": {
+    "transform": [
+      "glslify"
+    ]
+  }
+}
